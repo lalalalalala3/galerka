@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="utf-8"/> 
+    <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Портфолио Куцевол Галина</title> 
+    <link href="Calibri" rel="stylesheet"> 
+    <style> 
+        body { 
+            font-family: Calibri, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f9f9f9; 
+        } 
+        #wrapper { 
+            text-align: center; 
+            padding: 20px; 
+        } 
+        img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            transition: transform 0.3s; 
+        } 
+        img:hover { 
+            transform: scale(1.05); 
+        } 
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #333; 
+        } 
+        h2 { 
+            color: #dab71a; 
+        } 
+    </style> 
+    <script> 
+        function enlargeImage(imgElement) { 
+            imgElement.style.transform = imgElement.style.transform === 'scale(1.5)' ? 'scale(1)' : 'scale(1.5)'; 
+        } 
+    </script> 
+</head> 
+<body> 
+    <div id="wrapper"> 
+        <h2>Электронное портфолио студентки ГПОАУ АО АПК 334 группы Куцевол Галины</h2> 
+        <a href="index.html"> 
+            <img src="img/header.png" alt="Портфолио" /> 
+            <img src="img/Foto2.jpg" onclick="enlargeImage(this)" alt="Foto2" /> 
+        </a> 
+        <nav> 
+            <a href="one.html">1 курс</a> 
+            <a href="ty.html">2 курс 1 семестр</a> 
+            <a href="Tyty.html">2 курс 2 семестр</a> 
+            <a href="tri.html">3 курс</a> 
+            <a href="contact.html">Контакты</a> 
+            <a href="proekt.html"><h1>Проекты</h1></a> 
+        </nav> 
+        <section id="main-content"> 
+            <p>Электронное портфолио - это коллекция электронных доказательств, собранных и управляемых пользователем в Интернете. 
+            </p> 
+        </section> 
+    </div> 
+</body> 
+</html>
